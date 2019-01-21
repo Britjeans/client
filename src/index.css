@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  padding: 0;
+  
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.home-page h1 {
+  padding: 20px;
+}
+
+.welcome-page {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+  text-align: center;
+  padding: 1rem;
+  background-image: url("./images/jason-leung-479251-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.brief-intro {
+  position: absolute;
+  top:580px;
+  left: 0px;
+  text-align: center;
+  margin: 0;
+  padding-top: 8%;
+  padding-left: 20%;
+  padding-right: 20%;
+  height: 300px;
+  color: #fff;
+  background-color: #2A86A8;
+}
+
+.website-features {
+  position: absolute;
+  top:880px;
+  left: 0px;
+  padding-top: 8%;
+  padding-left: 8%;
+  padding-right: 8%;
+  height: 400px;
+  margin: 0;
+  color: #fff;
+  background-color: #2A86A8;
+}
+
+.contact-info {
+  position: absolute;
+  top:1280px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+  padding-top: 15px;
+  height: 160px;
+  margin: 0;
+  color: #fff;
+  background-color: #000;
+
+}
+
+.contact-info.contact-info a {
+  color: #fff;
+}
+
+.blog-timeline {
+  margin: 0;
+}
+
+.author-page{
+  margin: 0;
+}
+
+.blog-item {
+  padding: 10px;
+  margin: 10px;
+  background-color: #fff;
+  border-bottom: solid 1px;
+  border-color: #A2A2A2;
+
+}
+
+.blog-detail {
+  padding-top:40px;
+}
+
+.blog-detail-title {
+  text-align: center;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+  padding-left: 0px; 
+}
+
+.author-detail-info {
+  display: flex;
+  flex-direction: column;
+
+}
+.author-detail-info h5 {
+  position: relative;
+  left:20px;
+  margin: 0;
+}
+
+.author-detail-info span {
+  position: relative;
+  left: 20px;
+  margin:0;
+
+}
+.blog-detail-content {
+  padding: 20px;
+}
+
+.blog-editor {
+  margin: 1rem 4rem;
+}
+
+
+.text-editor .ql-container {
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  background: #fefcfc;
+}
+
+/* Snow Theme */
+.text-editor .ql-snow.ql-toolbar {
+  display: block;
+  background: #eaecec;
+}
+
+
+.text-editor .ql-editor {
+  min-height: 300px;
+  max-height: 300px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.far {
+  font-size: 3em;
+}
+
+.fas {
+  font-size: 3em;
+}
+
+.blog-title a {
+  color: #000;
+}
+.author-area a {
+  color: #000;
+}
+.author-info a {
+  color: #000;
+}
+
+.edit-area a{
+  margin-right: 10px;
+}
