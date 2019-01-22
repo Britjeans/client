@@ -10,6 +10,7 @@ import BlogForm from "../containers/BlogForm"
 import DiscoverPage from "../components/DiscoverPage"
 import BlogPage from "../components/BlogPage"
 import AuthPage from "../containers/AuthPage"
+import AboutMe from "../components/AboutMe"
 
 const Main = props => {
     const {authUser, errors, removeError, currentUser} = props;
@@ -66,6 +67,8 @@ const Main = props => {
                             );
                         }
                     } />
+                    <Route exact path="/aboutme" render={props => <AboutMe />} />
+
                 </Switch>
             </div>
         </div>
