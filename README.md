@@ -1,1 +1,0 @@
-This is the front-end part of a blog website, do not uuse this for business purpose
