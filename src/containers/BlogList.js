@@ -4,6 +4,13 @@ import { fetchBlogs, removeBlog, getAuthorBlogs } from "../store/actions/blogs";
 import BlogItem from "../components/BlogItem";
 
 class BlogList extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            visible: 3
+        }
+        this.loadMore = this.loadMore.bind(this);
+    }
     componentDidMount() {
         if(this.props.author) {
             this.props.getAuthorBlogs(this.props.u_id);
@@ -12,9 +19,15 @@ class BlogList extends Component {
         }
     }
 
+    loadMore() {
+        this.setState((prev) => {
+          return {visible: prev.visible + 4};
+        });
+    }
+
     render() {
         const {blogs, removeBlog, currentUser} = this.props;
-        let blogList = blogs.map(b => (
+        let blogList = blogs.slice(0, this.state.visible).map(b => (
             <BlogItem key={b._id} blog_id={b._id} date={b.createAt} 
                 title={b.title} 
                 user_id={b.user._id}
@@ -24,7 +37,17 @@ class BlogList extends Component {
                 isCorrectUser={currentUser === b.user._id}
             />
         ));
-        return blogList;
+        return (
+            <div> 
+                {blogList}
+                <div style={{textAlign: "center", margin: "40px"}}>
+                        <button className="btn btn-primary btn-md" style={{}} onClick={this.loadMore}> 
+                            Load More..
+                        </button>
+                </div>
+
+            </div>
+        );
 
     }
 
