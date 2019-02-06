@@ -1,11 +1,12 @@
 import React, {Component} from "react";
 import {connect} from "react-redux";
 import {postNewBlog} from "../store/actions/blogs";
-import ReactQuill from 'react-quill';
+import ReactQuill, { Quill } from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
-/* 
- * Simple editor component that takes placeholder text as a prop 
- */
+import ImageResize from 'quill-image-resize-module';
+
+Quill.register('modules/ImageResize', ImageResize);
+
 class NewBlog extends Component {
     constructor (props) {
       super(props);
@@ -78,6 +79,9 @@ class NewBlog extends Component {
       ['link', 'image', 'video'],
       ['clean']
     ],
+    ImageResize: {
+     //   modules: ['Resize', 'DisplaySize', 'Toolbar']
+    },
     clipboard: {
       // toggle to add extra line breaks when pasting HTML:
       matchVisual: false,
