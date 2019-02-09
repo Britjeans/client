@@ -24,7 +24,12 @@ class LoadBlog extends Component {
 
 
         return (
-            blogList
+            <div className="row"> 
+                <div className="col-md-0 col-lg-2"></div>
+                <div className="col-md-12 col-lg-8">{blogList}</div>
+                <div className="col-md-0 col-lg-2"></div>
+            </div>
+            
         );
     }
 }

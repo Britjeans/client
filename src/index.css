@@ -8,25 +8,28 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.home-page {
+  position: absolute;
+  left: 0px;
+}
+
 .home-page h1 {
   padding: 20px;
 }
 
 .welcome-page {
   width: 100vw;
-  height: 110vh;
-  position: absolute;
+  height: 115vh;
+  position: relative;
   margin: 0;
   padding: 0;
-  top: 0;
-  left: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   z-index: -1;
   text-align: center;
-  padding: 1rem;
   background-image: url("./images/jason-leung-479251-unsplash.jpg");
   background-position: center;
   background-size: cover;
@@ -34,9 +37,8 @@ body {
 }
 
 .brief-intro {
-  position: absolute;
-  top:580px;
-  left: 0px;
+  position: relative;
+  top: 0px;
   text-align: center;
   margin: 0;
   padding-top: 8%;
@@ -48,9 +50,8 @@ body {
 }
 
 .website-features {
-  position: absolute;
-  top:880px;
-  left: 0px;
+  position: relative;
+  top:0px;
   padding-top: 8%;
   padding-left: 8%;
   padding-right: 8%;
@@ -62,7 +63,7 @@ body {
 
 .contact-info {
   position: relative;
-  top:80px;
+  top:0px;
   left: 0px;
   width: 100%;
   text-align: center;
@@ -221,6 +222,7 @@ body {
 
 .contact-link {
   width: 60%;
+  height: 100px;
   margin: auto;
   text-align: center;
   font-size: 20px;
