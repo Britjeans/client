@@ -61,8 +61,8 @@ body {
 }
 
 .contact-info {
-  position: absolute;
-  top:1280px;
+  position: relative;
+  top:80px;
   left: 0px;
   width: 100%;
   text-align: center;
@@ -133,9 +133,8 @@ body {
 }
 
 .blog-editor {
-  margin: 1rem 4rem;
+  min-width: 600px;
 }
-
 
 .text-editor .ql-container {
   border-bottom-left-radius: 0.5em;

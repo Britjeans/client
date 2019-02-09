@@ -23,13 +23,13 @@ class BlogPage extends Component {
 
         return (
             <div className="row">
-                <div className="col-md-2">
+                <div className="col-lg-2">
                 </div>
 
-                <div className="col-md-8">
+                <div className="col-lg-8">
                     {blogList}
                 </div>
-                <div className="col-md-2">
+                <div className="col-lg-2">
                 </div>
             </div>
             

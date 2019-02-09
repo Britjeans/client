@@ -33,31 +33,38 @@ class NewBlog extends Component {
     render () {
       return (
         <div className="blog-editor">
-            <form onSubmit={this.handleNewBlog} >
-                {this.props.errors.message && (
-                    <div className="alert alert-danger">
-                        {this.props.errors.message}
-                    </div>
-                )}
-                <input type="text" className="form-control" placeholder="Blog Title"
-                    value={this.state.title} onChange={e => this.setState({title: e.target.value})} />
+            <div className="row">
+                <div className="col-sm-0 col-lg-2"></div>
+                <div className="col-lg-8">
+                    <form onSubmit={this.handleNewBlog} >
+                        {this.props.errors.message && (
+                            <div className="alert alert-danger">
+                                {this.props.errors.message}
+                            </div>
+                        )}
+                        <input type="text" className="form-control" placeholder="Blog Title"
+                            value={this.state.title} onChange={e => this.setState({title: e.target.value})} />
 
-                <div className="text-editor">
-
-                <ReactQuill 
-                theme={this.state.theme}
-                onChange={this.handleChange}
-                value={this.state.editorHtml}
-                modules={NewBlog.modules}
-                formats={NewBlog.formats}
-                bounds={'.app'}
-                placeholder={this.props.placeholder}
-                />
+                        <div className="text-editor">
+                            <ReactQuill 
+                            theme={this.state.theme}
+                            onChange={this.handleChange}
+                            value={this.state.editorHtml}
+                            modules={NewBlog.modules}
+                            formats={NewBlog.formats}
+                            bounds={'.app'}
+                            placeholder={this.props.placeholder}
+                            />
+                        </div>
+                        <button type="submit" className="btn btn-primary">
+                            Post Blog
+                        </button>
+                    </form>  
                 </div>
-                <button type="submit" className="btn btn-primary">
-                    Post Blog
-                </button>
-            </form>  
+
+                <div className="col-lg-8"></div>
+            </div>
+
 
         </div>
 

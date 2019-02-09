@@ -5,12 +5,12 @@ const AuthPage = props => {
     return(
         <div className="author-page">
             <div className="row">
-                <div className="col-sm-2">
+                <div className="col-sm-0 col-lg-2">
                 </div>
-                <div className="col-sm-8">
+                <div className="col-sm-12 col-lg-8">
                     <BlogList author u_id={u_id} {...props}/>
                 </div>
-                <div className="col-sm-2">
+                <div className="col-sm-0 col-lg-2">
                 </div>
             </div>
         </div>

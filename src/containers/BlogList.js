@@ -21,7 +21,7 @@ class BlogList extends Component {
 
     loadMore() {
         this.setState((prev) => {
-          return {visible: prev.visible + 4};
+          return {visible: prev.visible + 3};
         });
     }
 

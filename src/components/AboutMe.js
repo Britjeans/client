@@ -46,17 +46,17 @@ class AboutMe extends Component {
 
                 </div>
                 <div className="contact-info">
-				<p><b>Contact Me</b></p>
-				<p>linkedin:
-					<a href="https://linkedin.com/in/wanying-ding-984748151" >
-						linkedin.com/in/wanying-ding-984748151
-					</a>
-				</p>
-				<p>github:
-					<a href="https://github.com/Britjeans">
-						https://github.com/Britjeans
-					</a> 
-				</p>
+                    <p><b>Contact Me</b></p>
+                    <p>linkedin:
+                        <a href="https://linkedin.com/in/wanying-ding-984748151" >
+                            linkedin.com/in/wanying-ding-984748151
+                        </a>
+                    </p>
+                    <p>github:
+                        <a href="https://github.com/Britjeans">
+                            https://github.com/Britjeans
+                        </a> 
+                    </p>
 			</div>
 
                 
